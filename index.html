@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <!-- testing external CSS-->
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/hermanya/react-color-table/example/public/bootstrap-with-variables.css"
+    /> -->
+    <link rel="stylesheet" hef="style.css" />
+    <script
+      src="https://kit.fontawesome.com/98adf16936.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Weather Dashboard</title>
+  </head>
+  <body>
+    <div class="jumbotron text-center bg-dark text-white py-1">
+      <h1>Weather Dashboard</h1>
+      <p>a project by Kasey Chang</p>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <h4>Search for a City:</h4>
+          <form class="form-inline mb-3">
+            <input
+              class="form-control mr-sm-2"
+              type="search"
+              placeholder="City"
+              aria-label="Search"
+            />
+            <button class="btn my-3 my-sm-1" type="submit">
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+
+          <div class="container px-0">
+            <button
+              type="button"
+              id="Austin"
+              class="btn btn-outline-primary btn-block text-left "
+            >
+              Austin
+            </button>
+            <button
+              type="button"
+              id="Chicago"
+              class="btn btn-outline-primary btn-block text-left"
+            >
+              Chicago
+            </button>
+            <button
+              type="button"
+              id="Orlando"
+              class="btn btn-outline-primary btn-block text-left"
+            >
+              Orlando
+            </button>
+            <button
+              type="button"
+              id="San Francisco"
+              class="btn btn-outline-primary btn-block text-left"
+            >
+              San Francisco
+            </button>
+          </div>
+        </div>
+        <div class="col-sm-8">
+          <div class="container">
+            <!-- <p>api.openweathermap.org/data/2.5/weather?q=Austin</p> -->
+            <h2 id="curcity">
+              curcity (<span id="curdate">curdate</span>)
+              <span id="iconweather">iconweather</span>
+            </h2>
+
+            <p>Temperature: <span id="curtemp">curtemp</span></p>
+            <p>Humidity: <span id="curhumid">curhumid</span></p>
+            <p>Wind Speed: <span id="curwin">curwind</span></p>
+            <p>UV Index: <span id="curUV">curUV</span></p>   <!-- color coded!! -->
+          </div>
+          <h2>5-Day Forecast:</h2>
+          <div class="container-flex">
+            <div class="row">
+            <div class="card day1 col-sm-2 mx-2">
+              <div class="card-body px-0 py-1">
+                This is some text within a card body.
+              </div>
+            </div>
+            <div class="card day2  col-sm-2 mx-2">
+              <div class="card-body px-0 py-1">
+                This is some text within a card body.
+              </div>
+            </div>
+            <div class="card day3  col-sm-2 mx-2">
+              <div class="card-body px-0 py-1">
+                This is some text within a card body.
+              </div>
+            </div>
+            <div class="card day4  col-sm-2 mx-2">
+              <div class="card-body px-0 py-1">
+                This is some text within a card body.
+              </div>
+            </div>
+            <div class="card day5  col-sm-2 mx-2">
+              <div class="card-body px-0 py-1">
+                This is some text within a card body.
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="app.js"></script>
+  </body>
+</html>
