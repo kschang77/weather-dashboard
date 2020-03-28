@@ -39,6 +39,8 @@
           <h4>Search for a City:</h4>
           <form class="form-inline mb-3">
             <input
+              name="city"
+              id="city"
               class="form-control mr-sm-2"
               type="search"
               placeholder="City"
@@ -49,32 +51,32 @@
             </button>
           </form>
 
-          <div class="container px-0">
+          <div class="container px-0" id="citydiv">
             <button
               type="button"
               id="Austin"
-              class="btn btn-outline-primary btn-block text-left "
+              class="btn-city btn btn-outline-primary btn-block text-left"
             >
               Austin
             </button>
             <button
               type="button"
               id="Chicago"
-              class="btn btn-outline-primary btn-block text-left"
+              class="btn-city btn btn-outline-primary btn-block text-left"
             >
               Chicago
             </button>
             <button
               type="button"
               id="Orlando"
-              class="btn btn-outline-primary btn-block text-left"
+              class="btn-city btn-outline-primary btn-block text-left btn"
             >
               Orlando
             </button>
             <button
               type="button"
               id="San Francisco"
-              class="btn btn-outline-primary btn-block text-left"
+              class="btn-city btn-outline-primary btn-block text-left btn"
             >
               San Francisco
             </button>
@@ -83,40 +85,39 @@
         <div class="col-sm-8">
           <div class="container">
             <!-- <p>api.openweathermap.org/data/2.5/weather?q=Austin</p> -->
-            <h2 id="curcity">
-              curcity (<span id="curdate">curdate</span>)
-              <span id="iconweather">iconweather</span>
-            </h2>
-
-            <p>Temperature: <span id="curtemp">curtemp</span></p>
-            <p>Humidity: <span id="curhumid">curhumid</span></p>
-            <p>Wind Speed: <span id="curwin">curwind</span></p>
+            <span class="h2" id="curcity"></span> 
+            <span class="h2">(<span id="curdate"></span>)</span>
+            <span id="iconweather"></span>
+            
+            <p>Temperature: <span id="curtemp"></span></p>
+            <p>Humidity: <span id="curhumid"></span></p>
+            <p>Wind Speed: <span id="curwind"></span></p>
             <p>UV Index: <span id="curUV">curUV</span></p>   <!-- color coded!! -->
           </div>
           <h2>5-Day Forecast:</h2>
           <div class="container-flex">
             <div class="row">
-            <div class="card day1 col-sm-2 mx-2">
+            <div class="card day1 col-sm-2 mx-2" id="1">
               <div class="card-body px-0 py-1">
                 This is some text within a card body.
               </div>
             </div>
-            <div class="card day2  col-sm-2 mx-2">
+            <div class="card day2  col-sm-2 mx-2" id="2">
               <div class="card-body px-0 py-1">
                 This is some text within a card body.
               </div>
             </div>
-            <div class="card day3  col-sm-2 mx-2">
+            <div class="card day3  col-sm-2 mx-2" id="3">
               <div class="card-body px-0 py-1">
                 This is some text within a card body.
               </div>
             </div>
-            <div class="card day4  col-sm-2 mx-2">
+            <div class="card day4  col-sm-2 mx-2" id="4">
               <div class="card-body px-0 py-1">
                 This is some text within a card body.
               </div>
             </div>
-            <div class="card day5  col-sm-2 mx-2">
+            <div class="card day5  col-sm-2 mx-2" id="5">
               <div class="card-body px-0 py-1">
                 This is some text within a card body.
               </div>
