@@ -33,9 +33,10 @@
       <p>a project by Kasey Chang</p>
     </div>
 
-    <div class="container">
+    <div class="container-flex">
       <div class="row">
-        <div class="col-sm-4">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-3">
           <h4>Search for a City:</h4>
           <form class="form-inline mb-3">
             <input
@@ -46,44 +47,17 @@
               placeholder="City"
               aria-label="Search"
             />
-            <button class="btn my-3 my-sm-1" type="submit">
+            <button class="btn my-3 my-sm-1 bg-info text-white" type="submit">
               <i class="fas fa-search"></i>
             </button>
           </form>
 
           <div class="container px-0" id="citydiv">
-            <button
-              type="button"
-              id="Austin"
-              class="btn-city btn btn-outline-primary btn-block text-left"
-            >
-              Austin
-            </button>
-            <button
-              type="button"
-              id="Chicago"
-              class="btn-city btn btn-outline-primary btn-block text-left"
-            >
-              Chicago
-            </button>
-            <button
-              type="button"
-              id="Orlando"
-              class="btn-city btn-outline-primary btn-block text-left btn"
-            >
-              Orlando
-            </button>
-            <button
-              type="button"
-              id="San Francisco"
-              class="btn-city btn-outline-primary btn-block text-left btn"
-            >
-              San Francisco
-            </button>
+           <!-- the cities would be here-->
           </div>
         </div>
         <div class="col-sm-8">
-          <div class="container">
+          <div class="container-flex border-2">
             <!-- <p>api.openweathermap.org/data/2.5/weather?q=Austin</p> -->
             <span class="h2" id="curcity"></span> 
             <span class="h2">(<span id="curdate"></span>)</span>
@@ -97,29 +71,44 @@
           <h2>5-Day Forecast:</h2>
           <div class="container-flex">
             <div class="row">
-            <div class="card day1 col-sm-2 mx-2" id="1">
-              <div class="card-body px-0 py-1">
-                This is some text within a card body.
+            <div class="card day1 col-sm-2 mx-2 bg-info " id="1">
+              <div class="card-body px-0 py-1 text-white">
+                  <B class="curdate2 day-1"></B>
+                  <P class="curicon2 day-1"></P>
+                  <P>Temp: <span class="curtemp2 day-1"></span></P>
+                  <p>Humidity: <span class="curhumid2 day-1"></span></p>
               </div>
             </div>
-            <div class="card day2  col-sm-2 mx-2" id="2">
-              <div class="card-body px-0 py-1">
-                This is some text within a card body.
+            <div class="card day2  col-sm-2 mx-2  bg-info" id="2">
+              <div class="card-body px-0 py-1 text-white">
+                  <B class="curdate2 day-2"></B>
+                  <P class="curicon2 day-2"></P>
+                  <P>Temp: <span class="curtemp2 day-2"></span></P>
+                  <p>Humidity: <span class="curhumid2 day-2"></span></p>
               </div>
             </div>
-            <div class="card day3  col-sm-2 mx-2" id="3">
-              <div class="card-body px-0 py-1">
-                This is some text within a card body.
+            <div class="card day3  col-sm-2 mx-2 bg-info " id="3">
+              <div class="card-body px-0 py-1 text-white">
+                  <B class="curdate2 day-3"></B>
+                  <P class="curicon2 day-3"></P>
+                  <P>Temp: <span class="curtemp2 day-3"></span></P>
+                  <p>Humidity: <span class="curhumid2 day-3"></span></p>
               </div>
             </div>
-            <div class="card day4  col-sm-2 mx-2" id="4">
-              <div class="card-body px-0 py-1">
-                This is some text within a card body.
+            <div class="card day4  col-sm-2 mx-2 bg-info" id="4">
+              <div class="card-body px-0 py-1  text-white">
+                  <B class="curdate2 day-4"></B>
+                  <P class="curicon2 day-4"></P>
+                  <P>Temp: <span class="curtemp2 day-4"></span></P>
+                  <p>Humidity: <span class="curhumid2 day-4"></span></p>
               </div>
             </div>
-            <div class="card day5  col-sm-2 mx-2" id="5">
-              <div class="card-body px-0 py-1">
-                This is some text within a card body.
+            <div class="card day5  col-sm-2 mx-2 bg-info " id="5">
+              <div class="card-body px-0 py-1 text-white">
+                  <B class="curdate2 day-5"></B>
+                  <P class="curicon2 day-5"></P>
+                  <P>Temp: <span class="curtemp2 day-5"></span></P>
+                  <p>Humidity: <span class="curhumid2 day-5"></span></p>
               </div>
             </div>
             </div>
