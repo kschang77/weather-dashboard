@@ -14,7 +14,7 @@ http://github.com/kschang77/weather-dashboard
 
 https://kschang77.github.io/weather-dashboard/
 
-#Demo
+# Demo Recording
 
 ![Recording](weatherdashboarddemo.gif)
 
