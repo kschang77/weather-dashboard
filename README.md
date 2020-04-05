@@ -1,18 +1,23 @@
 # weather-dashboard
 
+![screen shot](weatherdashboard.png)
+
 Project weather-dashboard is a lightweight single-page Javascript app that allow user to query OpenWeatherMap for present day and 5-day forecast of 
 set cities. One start with nothing, and simply enter cities to add it to
 the list of cities. Click on the city name to retrieve data for that city. 
 
-## Project Repo
+### Project Repo
 
 http://github.com/kschang77/weather-dashboard
 
-## Prerequisites
+### Deployed Link
 
-Any Javascript-capable browser
+https://kschang77.github.io/weather-dashboard/
 
-## Installation
+#Demo
+
+![Recording](weatherdashboarddemo.webm)
+
 
 No installation required
 
@@ -43,17 +48,11 @@ No installation required
             queryCurrentWeather(tempCity);
         })
 
-
-# Deployed Link
-
-https://kschang77.github.io/weather-dashboard/
-
-
 ## Author
 
 **Kasey Chang** 
 
-- [Link to Github](https://github.com/kschang77)
+- [Link to Github](https://kschang77.github.io)
 - [Link to LinkedIn](https://www.linkedin.com/in/kasey-chang)
 
 
