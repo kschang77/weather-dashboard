@@ -16,7 +16,7 @@ https://kschang77.github.io/weather-dashboard/
 
 #Demo
 
-![Recording](weatherdashboarddemo.webm)
+![Recording](weatherdashboarddemo.gif)
 
 
 No installation required
