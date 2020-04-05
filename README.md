@@ -37,6 +37,8 @@ No installation required
 
 ## Code Snippet
 
+This bit is the submit button event handler when one enters a city and hits enter or clicks submit. The field was read into a temporary variable, and pre-pended to the cityList, then the whole list is saved via saveCity(). Then a refresh is called to update the display, and the field value itself is set back to blank, then the weather tiles are updated. 
+
         $(".form-inline").on('submit', function(event){
             event.preventDefault();
             var tempCity = $("#city").val(); 
